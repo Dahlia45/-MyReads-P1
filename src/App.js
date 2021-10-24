@@ -63,7 +63,7 @@ render() {
       <Route path='/search' render={({ history }) => (
         <Search
           Searched={this.state.books}
-          onASearch={(book, shelf) => {
+          onSearch={(book, shelf) => {
             this.changeShelf(book, shelf)
             history.push('/')
           }}
